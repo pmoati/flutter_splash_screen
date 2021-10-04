@@ -67,7 +67,7 @@ Alternatively, your editor might support flutter packages get. Check the docs fo
 package org.devio.flutter.splashscreen.example;
 import android.os.Bundle;
 
-+ import org.devio.flutter.splashscreen.flutter_splash_screen.SplashScreen;
++ import org.devio.flutter.splashscreen.SplashScreen;
 
 import io.flutter.app.FlutterActivity;
 import io.flutter.plugins.GeneratedPluginRegistrant;
