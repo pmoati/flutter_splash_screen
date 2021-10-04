@@ -61,7 +61,7 @@ Alternatively, your editor might support flutter packages get. Check the docs fo
 
 #### Android
 
-Update the `MainActivity.java` to use `flutter_splash_screen` via the following changes:
+- [Java] Update the `MainActivity.java` to use `flutter_splash_screen` via the following changes:
 
 ```java
 package org.devio.flutter.splashscreen.example;
@@ -78,6 +78,24 @@ public class MainActivity extends FlutterActivity {
  +       SplashScreen.show(this, true);// here
         super.onCreate(savedInstanceState);
         GeneratedPluginRegistrant.registerWith(this);
+    }
+}
+```
+
+- [Kotlin] Update the `MainActivity.kt` to use `flutter_splash_screen` via the following changes:
+
+```java
+
+import androidx.annotation.NonNull
+import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.engine.FlutterEngine
+import org.devio.flutter.splashscreen.SplashScreen;
+
+class MainActivity: FlutterActivity() {
+
+    override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
+        SplashScreen.show(this, true);
+        super.configureFlutterEngine(flutterEngine)
     }
 }
 ```
